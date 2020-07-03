@@ -8,7 +8,9 @@
 ### .vimrc
 *
 
-###
+### INSTALL_SOLUS.sh
+
+## INSTALL_UBUNTU.sh
 
 ### marco.compton.conf
 * Configuration File of Compton Compositor for the MATE-COMPIZ DE. Has to be placed into ~/.config
