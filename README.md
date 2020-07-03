@@ -5,11 +5,12 @@
 #### .bashrc
 ![](images/bash.png)
 
-
 * The .bashrc file is currently set-up for Solus, some aliases have to be edited manually to work with other distributions.
 
 #### .vimrc
-*
+![](images/vim.png)
+
+* The .vimrc file contains my current VIM setup.
 
 #### INSTALL_SOLUS.sh
 
