@@ -1,6 +1,6 @@
 ## THIS SCRIPT INSTALLS ALL MY NECESSARY SOFTWARE TO UBUNTU LINUX ##
 ## (c) JELLE LANGEDIJK 2020 ##
-## TO RUN: sudo sh a.sh ## 
+## TO RUN: sudo sh INSTALL_SOLUS.sh ## 
 
 
 echo "
@@ -101,47 +101,3 @@ case "$re" in
     n)  echo; echo; echo  ;;
     *)  echo; echo; echo "enter y (yes) or n (no)" ;;
 esac
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
