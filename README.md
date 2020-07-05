@@ -21,4 +21,5 @@
 * Bash script that installs essetial software automatically on an Ubuntu-based distribution.
 #### marco.compton.conf
 * Configuration File of Compton Compositor for the MATE-COMPIZ DE. Has to be placed into ~/.config
-
+#### status.sh
+* status.sh is a Bash Script that loads in data for the i3 bar. Replace "i3status" with the directory to this script.
