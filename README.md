@@ -12,10 +12,13 @@
 
 * The .vimrc file contains my current VIM setup.
 
+#### config
+* i3 GAPS Config File.
+
 #### INSTALL_SOLUS.sh
-
+* [!] Currently still in testing phase.
 #### INSTALL_UBUNTU.sh
-
+* Bash script that installs essetial software automatically on an Ubuntu-based distribution.
 #### marco.compton.conf
 * Configuration File of Compton Compositor for the MATE-COMPIZ DE. Has to be placed into ~/.config
 
