@@ -92,6 +92,19 @@ esac
 
 echo
 echo
+## GTK-GREETER SETUP ##
+
+read -p "INSTALL LIGHTDM GTK-GREETER SETTINGS ? (enter y (yes) or n (no))" ob
+case "$ob" in
+    y)  echo; echo; sudo eopkg it lightdm-gtk-greeter-settings ;;
+    n)  echo; echo; echo SKIPPED LIGHTDM GTK-GREETER SETTINGS INSTALLATION ;;
+    *)  echo; echo; echo "enter y (yes) or n (no)" ;;
+esac
+
+/bin/sleep 1
+
+echo
+echo
 ## i3 SETUP ##
 
 read -p "INSTALL i3, lxappearance (THEMING), nitrogen (WALLPAPER MANAGER)  ? (enter y (yes) or n (no))" ob
