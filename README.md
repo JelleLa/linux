@@ -2,6 +2,8 @@
 ## About this Repository
 * This repository contains miscellaneous Linux files, like desktop entries and configuration files. These are the ones that I *currently* use on my Linux System.
 
+#### i3
+* Contains all relevant i3 files.
 #### .bashrc
 ![](images/bash.png)
 
@@ -12,8 +14,7 @@
 
 * The .vimrc file contains my current VIM setup.
 
-#### config
-* i3 GAPS Config File.
+
 
 #### INSTALL_SOLUS.sh
 * [!] Currently still in testing phase.
@@ -21,5 +22,4 @@
 * Bash script that installs essetial software automatically on an Ubuntu-based distribution.
 #### marco.compton.conf
 * Configuration File of Compton Compositor for the MATE-COMPIZ DE. Has to be placed into ~/.config
-#### status.sh
-* status.sh is a Bash Script that loads in data for the i3 bar. Replace "i3status" with the directory to this script.
+
