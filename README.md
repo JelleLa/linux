@@ -1,9 +1,18 @@
 # Linux Configuration Files
 ## About this Repository
 * This repository contains miscellaneous Linux files, like desktop entries and configuration files. These are the ones that I *currently* use on my Linux System.
-
+## Hierarchy
 #### i3
-* Contains all relevant i3 files.
+* Contains i3 and i3status config files.
+
+#### images
+* Contains the images used within this repository.
+
+#### neofetch
+* Contains a customised neofetch configuration file.
+#### picom
+* Contains the picom.conf configuration file.
+
 #### .bashrc
 ![](images/bash.png)
 
@@ -14,12 +23,6 @@
 
 * The .vimrc file contains my current VIM setup.
 
-
-
-#### INSTALL_SOLUS.sh
-* [!] Currently still in testing phase.
-#### INSTALL_UBUNTU.sh
-* Bash script that installs essetial software automatically on an Ubuntu-based distribution.
 #### marco.compton.conf
 * Configuration File of Compton Compositor for the MATE-COMPIZ DE. Has to be placed into ~/.config
 
