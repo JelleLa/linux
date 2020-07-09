@@ -2,8 +2,8 @@
 theme: jekyll-theme-minimal
 
 #BASICS
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-author: Some Person
+title: Linux Configuration Files
+description: Put some description here.
+author: Jelle Langedijk
 show_downloads: false
 logo: https://github.com/JelleLa/linux/blob/master/images/bash.png
