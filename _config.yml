@@ -3,7 +3,7 @@ theme: jekyll-theme-minimal
 
 #BASICS
 title: Linux Configuration Files
-description: Put some description here.
+description: Put some description here
 author: Jelle Langedijk
 show_downloads: false
 logo: https://github.com/JelleLa/linux/blob/master/images/bash.png
