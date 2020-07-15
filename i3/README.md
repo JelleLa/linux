@@ -1,9 +1,14 @@
-# i3 Configuration
-![](https://github.com/JelleLa/linux/blob/master/images/i3.png)
+# RELEASE NOTES
 
-## What?
+#### [v.1.0]
 * `config` contains the i3 configuration;
 * `status` is a Bash Script that loads the info for the top bar. This script is called in `config`as alternative to `i3status`.
 
-## Write Location
+# WRITE LOCATION
 Move files to `~/.config/i3`. 
+
+# ROADMAP 
+- [ ] Update Color Sheme.
+
+
+
