@@ -1,3 +1,12 @@
-# Neofetch Configuration
-![](https://github.com/JelleLa/linux/blob/master/images/neo.png)\
-Move files to `~/.config/neofetch`.  
+# RELEASE NOTES
+
+#### [v.1.0]
+* Initial Release.
+
+# SETUP
+
+Move files to `~/.config/neofetch`. 
+
+# ROADMAP 
+-
+ 
