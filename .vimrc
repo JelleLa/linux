@@ -44,8 +44,6 @@ set ruler
 " UNDO LIMIT
 set history=1000
 
-" SPELL CHECKING (ENGLISH)
-set spell
 
 
 
