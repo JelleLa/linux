@@ -1,8 +1,7 @@
 # RELEASE NOTES
 
 #### [v.1.0]
-* Initial Release with dark/purple color sheme.
-
+* Initial Release.
 
 # HOW TO EXECUTE
 
