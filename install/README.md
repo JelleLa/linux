@@ -4,7 +4,7 @@
 * Initial Release with dark/purple color sheme.
 
 
-# How to Execute
+# HOW TO EXECUTE
 
 Execute by running `sh nameofscript.sh`. Ensure that the script has the correct permissions (with `chmod`).
 
