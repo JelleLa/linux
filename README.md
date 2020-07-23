@@ -1,28 +1,24 @@
-# Linux Configuration Files 🐧
-## About this Repository
-* This repository contains miscellaneous Linux files, like desktop entries and configuration files. These are the ones that I *currently* use on my Linux System.
+# Linux
+Linux files like configurations for programms like i3 and Neofetch and more! This repository can be cloned by running `git clone https://github.com/JelleLa/linux`.
+
 ## Hierarchy
-#### i3
-* Contains i3 and i3status config files.
+The Linux files are sorted in folders, like i3 and Neofetch self-evidenty containing i3 and Neofetch related files.
 
-#### images
-* Contains the images used within this repository.
+* **firefox** (Current Version: 1.0 [09-07-2020])
 
-#### neofetch
-* Contains a customised neofetch configuration file.
-#### picom
-* Contains the picom.conf configuration file.
+* **i3** (Current Version: 1.0 [14-07-2020])
 
-#### .bashrc
-![](images/bash.png)
+* **images** (Current Version: 1.0 [12-07-2020])
 
-* The .bashrc file is currently set-up for Solus, some aliases have to be edited manually to work with other distributions.
+* **install** (Current Version: 1.0 [06-07-2020])
 
-#### .vimrc
-![](images/vim.png)
+* **neofetch** (Current Version: 1.0 [07-07-2020])
 
-* The .vimrc file contains my current VIM setup.
+* **picom** (Current Version: 1.0 [16-07-2020])
 
-#### marco.compton.conf
-* Configuration File of Compton Compositor for the MATE-COMPIZ DE. Has to be placed into ~/.config
+* **ranger** (Current Version: 1.0 [08-07-2020])
+
+* **.bashrc** (Current Version: 1.0 [21-07-2020])
+
+* **.vimrc** (Current Version: 1.0 [21-07-2020])
 
