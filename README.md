@@ -14,6 +14,8 @@ The Linux files are sorted in folders, like i3 and Neofetch self-evidenty contai
 
 * **mpd** (Current Version: 1.0 [10-08-2020])
 
+* **ncmpcpp** (Current Version: 1.0 [10-08-2020])
+
 * **neofetch** (Current Version: 1.0 [07-07-2020])
 
 * **picom** (Current Version: 1.0 [16-07-2020])
