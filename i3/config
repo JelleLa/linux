@@ -1,136 +1,24 @@
-#	 _ ____                        _____ ____  _   _ ______ _____ _____ 
-#	(_)___ \                      / ____/ __ \| \ | |  ____|_   _/ ____|
-#	 _  __) |_      ___ __ ___   | |   | |  | |  \| | |__    | || |  __ 
-#	| ||__ <\ \ /\ / / '_ ` _ \  | |   | |  | | . ` |  __|   | || | |_ |
-#	| |___) |\ V  V /| | | | | | | |___| |__| | |\  | |     _| || |__| |
-#	|_|____/  \_/\_/ |_| |_| |_|  \_____\____/|_| \_|_|    |_____\_____|
+#=============================================================================
 #
+#	██╗██████╗ ██╗    ██╗███╗   ███╗     ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+#	██║╚════██╗██║    ██║████╗ ████║    ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+#	██║ █████╔╝██║ █╗ ██║██╔████╔██║    ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+#	██║ ╚═══██╗██║███╗██║██║╚██╔╝██║    ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+#	██║██████╔╝╚███╔███╔╝██║ ╚═╝ ██║    ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+#	╚═╝╚═════╝  ╚══╝╚══╝ ╚═╝     ╚═╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ 
 #
-#
-#
-## --------------------------------------------------------------------------------------------------------- ##
-## VARIABLE SETTINGS ##
+#==============================================================================
+## ~~ VARIABLE SETTINGS ~~
+#==============================================================================
 set $defaultmod Mod4
 set $up Up
 set $down Down
 set $left Left
 set $right Right
-## --------------------------------------------------------------------------------------------------------- ##
-## FONT SETTINGS ##
-font pango: Roboto Regular 12      #Clear Sans 10
-## --------------------------------------------------------------------------------------------------------- ##
-## AUTOLAUNCH ##
-exec --no-startup-id nm-applet
-exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
-exec nitrogen --restore &
-exec picom --config ~/.config/picom/picom.conf
-exec picom
-exec albert
-exec audacious
-exec --no-startup-id blueman-applet
-for_window [class="Firefox"] focus
-## --------------------------------------------------------------------------------------------------------- ##
-## KEYBINDINGS ##
-bindsym Mod4+Shift+s exec i3lock --color=292626 # Easier locking
-## --------------------------------------------------------------------------------------------------------- ##
-## BACKLIGHT SETTINGS ##
-# Note: If light doesn't work, install xbacklight and 1) uncomment the two lines below.
-# 2) Comment out the exec light lines.
-# bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-# bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-bindsym XF86MonBrightnessUp exec light -A 10 # Increase Brightness
-bindsym XF86MonBrightnessDown exec light -U 10 # Decrease Brightness
-## --------------------------------------------------------------------------------------------------------- ##
-## MEDIA BUTTON SETTINGS ##
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioNext exec playerctl next
-## --------------------------------------------------------------------------------------------------------- ##
-## VOLUME SETTINGS ##
-bindsym Print exec scrot -q 100
-
-# Raise Volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
-
-# Lower Volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
-bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle-mute # Toggle muting
-## --------------------------------------------------------------------------------------------------------- ##
-## WINDOW SETTINGS ##
-# Use Mouse+Mod4 to drag floating windows to their wanted position
-floating_modifier Mod4
-
-# start a terminal
-bindsym Mod4+Return exec i3-sensible-terminal
-
-# kill focused window
-bindsym Mod4+q kill
-# start dmenu (a program launcher)
-bindsym Mod4+d exec dmenu_run
-
-# change focus
-bindsym Mod4+Left focus left
-bindsym Mod4+Down focus down
-bindsym Mod4+Up focus up
-bindsym Mod4+Right focus right
-
-# alternatively, you can use the cursor keys:
-#bindsym Mod4+Left focus left
-#bindsym Mod4+Down focus down
-#bindsym Mod4+Up focus up
-#bindsym Mod4+Right focus right
-
-# move focused window
-bindsym Mod4+Shift+$Left move left
-bindsym Mod4+Shift+$Down move down
-bindsym Mod4+Shift+$Up move up
-bindsym Mod4+Shift+$Right move right
-
-# alternatively, you can use the cursor keys:
-#bindsym Mod4+Alt+$Left move left
-#bindsym Mod4+Alt+$Down move down
-#bindsym Mod4+Alt+$Up move up
-#bindsym Mod4+Alt+$Right move right
-
-# split in horizontal orientation
-bindsym Mod4+h split h
-
-# split in vertical orientation
-bindsym Mod4+v split v
-
-# enter fullscreen mode for the focused container
-bindsym Mod4+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym Mod4+s layout stacking
-bindsym Mod4+w layout tabbed
-bindsym Mod4+e layout toggle split
-
-# toggle tiling / floating
-bindsym Mod4+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym Mod4+space focus mode_toggle
-
-# focus the parent container
-bindsym Mod4+a focus parent
-focus_follows_mouse no
-
-# focus the child container
-#bindsym Mod4+d focus child
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym Mod4+plus scratchpad show
-
-# Make the currently focused window a scratchpad
-bindsym Mod4+Shift+plus move scratchpad
-
-## --------------------------------------------------------------------------------------------------------- ##
-## WORKSPACE SETTINGS ##
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+#==============================================================================
+## ~~ VARIABLES ~~
+#==============================================================================
+# Workspace variables
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -142,8 +30,139 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10: Music 🎵"
 
+# Color variables
+set $tb "#20111B"	# Taskbar Background Color
+set $ac "#a2742b"	# Accent Color 
 
-# switch to workspace
+#==============================================================================
+## ~~ FONT SETTINGS ~~ 
+#==============================================================================
+font pango:Clear Sans 10
+
+#==============================================================================
+## ~~ AUTOLAUNCH ~~
+#==============================================================================
+exec --no-startup-id nm-applet
+exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
+exec nitrogen --restore &
+exec picom --config ~/.config/picom/picom.conf
+exec picom
+exec albert
+exec --no-startup-id "mate-terminal --role=ncmpcpp --command=ncmpcpp"
+for_window [class="Firefox"] focus
+for_window [class="Mate-terminal" window_role="ncmpcpp"] floating enable
+for_window [class="Mate-terminal" window_role="ncmpcpp"] resize set 1500 1000
+for_window [class="Mate-terminal" window_role="ncmpcpp"] move position center 
+for_window [class="blueman-manager"] floating enable
+exec_always --no-startup-id killall -q polybar
+exec_always --no-startup-id polybar bar &
+
+#==============================================================================
+## ~~ KEYBINDINGS ~~ 
+#==============================================================================
+bindsym Mod4+Shift+s exec i3lock --color=292626 # Easier locking
+
+#==============================================================================
+## ~~ BACKLIGHT SETTINGS ~~
+#==============================================================================
+# Note: If light doesn't work, install xbacklight and 1) uncomment the two lines below.
+# 2) Comment out the exec light lines.
+# bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+# bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec light -A 10 # Increase Brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # Decrease Brightness
+
+#==============================================================================
+## ~~ MEDIA BUTTON SETTINGS ~~
+#==============================================================================
+bindsym $mod+e exec mpc toggle
+
+ 
+
+#bindsym XF86AudioPlay exec playerctl play-pause
+#bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioPrev exec playerctl previous
+#bindsym XF86AudioNext exec playerctl next
+
+#==============================================================================
+## ~~ VOLUME SETTINGS ~~
+#==============================================================================
+bindsym Print exec scrot -q 100
+
+# Raise Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
+
+# Lower Volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle-mute # Toggle muting
+
+#==============================================================================
+## ~~ WINDOW SETTINGS ~~
+#==============================================================================
+# Enable Mouse Hover To Focus
+focus_follows_mouse yes
+# Use Mouse+Mod4 to drag floating windows to their wanted position
+floating_modifier Mod4
+
+# Start a terminal
+bindsym Mod4+Return exec i3-sensible-terminal
+
+# Kill focused window
+bindsym Mod4+q kill
+# start dmenu (a program launcher)
+bindsym Mod4+d exec dmenu_run
+
+# Change focus
+bindsym Mod4+Left focus left
+bindsym Mod4+Down focus down
+bindsym Mod4+Up focus up
+bindsym Mod4+Right focus right
+
+# Move focused window
+bindsym Mod4+Shift+$Left move left
+bindsym Mod4+Shift+$Down move down
+bindsym Mod4+Shift+$Up move up
+bindsym Mod4+Shift+$Right move right
+
+# Split in horizontal orientation
+bindsym Mod4+h split h
+
+# Split in vertical orientation
+bindsym Mod4+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym Mod4+f fullscreen toggle
+
+# Change container layout (stacked, tabbed, toggle split)
+bindsym Mod4+s layout stacking
+bindsym Mod4+w layout tabbed
+bindsym Mod4+e layout toggle split
+
+# Toggle tiling / floating
+bindsym Mod4+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym Mod4+space focus mode_toggle
+
+# Focus the parent container
+bindsym Mod4+a focus parent
+focus_follows_mouse no
+
+# Focus the child container
+#bindsym Mod4+d focus child
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym Mod4+plus scratchpad show
+
+# Make the currently focused window a scratchpad
+bindsym Mod4+Shift+plus move scratchpad
+
+#==============================================================================
+## ~~ WORKSPACE SETTINGS ~~
+#==============================================================================
+
+# Switch to workspace
 bindsym Mod4+1 workspace $ws1
 bindsym Mod4+2 workspace $ws2
 bindsym Mod4+3 workspace $ws3
@@ -155,7 +174,7 @@ bindsym Mod4+8 workspace $ws8
 bindsym Mod4+9 workspace $ws9
 bindsym Mod4+0 workspace $ws10
 
-# move focused container to workspace
+# Move focused container to workspace
 bindsym Mod4+Shift+1 move container to workspace $ws1
 bindsym Mod4+Shift+2 move container to workspace $ws2
 bindsym Mod4+Shift+3 move container to workspace $ws3
@@ -167,26 +186,32 @@ bindsym Mod4+Shift+8 move container to workspace $ws8
 bindsym Mod4+Shift+9 move container to workspace $ws9
 bindsym Mod4+Shift+0 move container to workspace $ws10
 
-# assignments 
-assign [class="Audacious"] $ws10 
+# Assignments 
 assign [class="Firefox"] $ws5 
+#assign [class="Mate-terminal" window_role="cmus"] $ws10
+assign [class="Mate-terminal" window_role="ncmpcpp"] $ws10
 
-# move container
+# Move container
 bindsym Mod4+z move workspace to output left
 bindsym Mod4+x move workspace to output right
-## --------------------------------------------------------------------------------------------------------- ##
-## RELOAD SETTINGS ##
-# reload the configuration file
+
+#==============================================================================
+## ~~ RELOAD SETTINGS ~~
+#==============================================================================
+
+# Reload the configuration file
 bindsym Mod4+Shift+c reload
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod4+Shift+r restart
 
-# exit i3 (logs you out of your X session)
+# Exit i3 (logs you out of your X session)
 bindsym Mod4+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-## --------------------------------------------------------------------------------------------------------- ##
-## RESIZING SETTINGS ##
-# resize window (you can also use the mouse for that)
+#==============================================================================
+## ~~ RESIZING SETTINGS ~~
+#==============================================================================
+
+# Resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -212,32 +237,35 @@ mode "resize" {
 }
 
 bindsym Mod4+r mode "resize"
-## --------------------------------------------------------------------------------------------------------- ##
-## COLOR SETTINGS ##
 
-bar {
-        status_command ~/.config/i3/status.sh
-        position top
+#==============================================================================
+## ~~ COLOR SETTINGS ~~
+#==============================================================================
 
-        colors {
-            background #292626
+#bar {
+#        status_command ~/.config/i3/status.sh
+#        position bottom
+#
+#        colors {
+#            background #20111B
+#
+#            focused_workspace #a2742b #a2742b  #fafafa
+#            active_workspace #5294e2 #5294e2 #fafafa
+#            inactive_workspace #404552 #404552 #fafafa
+#            urgent_workspace #ff5757 #ff5757 #fafafa
+#        }
+#}
 
-            focused_workspace #9370DB #9370DB  #fafafa
-            active_workspace #5294e2 #5294e2 #fafafa
-            inactive_workspace #404552 #404552 #fafafa
-            urgent_workspace #ff5757 #ff5757 #fafafa
-        }
-}
 
-
-client.focused          #404552 #404552 #fafafa #ff5757 #fafafa
+client.focused          #701d1d #404552 #fafafa #ff5757 #fafafa
 client.focused_inactive #666666 #404552 #eeeeee #666666 #666666
 client.unfocused        #404552 #484b52 #eeeeee #ff5757 #404552
 client.urgent           #ff5757 #404552 #ffffff #555757 #404552
 client.background       #404552
-## --------------------------------------------------------------------------------------------------------- ##
-## GAPS SETTINGS ##
 
+#==============================================================================
+## ~~ GAPS SETTINGS ~~ 
+#==============================================================================
 for_window [class="^.*"] border pixel 0
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
@@ -247,4 +275,4 @@ smart_borders no_gaps
 smart_gaps on
 gaps inner 15
 gaps outer 0
-## --------------------------------------------------------------------------------------------------------- ##
+
