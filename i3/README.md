@@ -1,4 +1,7 @@
 # RELEASE NOTES
+#### [v.1.2] (23/08/2020)
+* Replaced `albert` search bar with `rofi`. Ensure to move the `.Xresources` file in this repo to `~` for correct colors.
+
 #### [v.1.1] (10/08/2020)
 * `config` is restructured to make it more readable.
 * New autolaunch instances added for e.g. `ncmpcpp`.
