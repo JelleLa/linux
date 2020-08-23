@@ -28,3 +28,5 @@ The Linux files are sorted in folders, like i3 and Neofetch self-evidenty contai
 
 * **.vimrc** (Current Version: 1.0 [21-07-2020])
 
+* **.Xresources** (Current Version: 1.0 [23-08-2020])
+
