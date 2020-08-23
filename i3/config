@@ -23,21 +23,22 @@ set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
-set $ws5 "5: Firefox 🦊"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10: Music 🎵"
+set $ws10 "10"
 
 # Color variables
-set $tb "#20111B"	# Taskbar Background Color
-set $ac "#a2742b"	# Accent Color 
+set $dgrey "#20111B"	# Dark Grey
+set $lbrown "#a2742b"	# Light Brown
+set $black "#000000" 	# Black
 
 #==============================================================================
 ## ~~ FONT SETTINGS ~~ 
 #==============================================================================
-font pango:Clear Sans 10
+font: Roboto Sans 10
 
 #==============================================================================
 ## ~~ AUTOLAUNCH ~~
@@ -47,7 +48,6 @@ exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
 exec nitrogen --restore &
 exec picom --config ~/.config/picom/picom.conf
 exec picom
-exec albert
 exec --no-startup-id "mate-terminal --role=ncmpcpp --command=ncmpcpp"
 for_window [class="Firefox"] focus
 for_window [class="Mate-terminal" window_role="ncmpcpp"] floating enable
@@ -60,8 +60,8 @@ exec_always --no-startup-id polybar bar &
 #==============================================================================
 ## ~~ KEYBINDINGS ~~ 
 #==============================================================================
-bindsym Mod4+Shift+s exec i3lock --color=292626 # Easier locking
-
+bindsym Mod4+Shift+s exec i3lock --color=$black 				# i3lock
+bindsym Mod4+s exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 	# Rofi
 #==============================================================================
 ## ~~ BACKLIGHT SETTINGS ~~
 #==============================================================================
@@ -75,8 +75,11 @@ bindsym XF86MonBrightnessDown exec light -U 10 # Decrease Brightness
 #==============================================================================
 ## ~~ MEDIA BUTTON SETTINGS ~~
 #==============================================================================
-bindsym $mod+e exec mpc toggle
 
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPause exec mpc toggle
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
  
 
 #bindsym XF86AudioPlay exec playerctl play-pause
@@ -134,8 +137,8 @@ bindsym Mod4+v split v
 bindsym Mod4+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
-bindsym Mod4+s layout stacking
-bindsym Mod4+w layout tabbed
+#bindsym Mod4+s layout stacking
+#bindsym Mod4+w layout tabbed
 bindsym Mod4+e layout toggle split
 
 # Toggle tiling / floating
@@ -188,7 +191,6 @@ bindsym Mod4+Shift+0 move container to workspace $ws10
 
 # Assignments 
 assign [class="Firefox"] $ws5 
-#assign [class="Mate-terminal" window_role="cmus"] $ws10
 assign [class="Mate-terminal" window_role="ncmpcpp"] $ws10
 
 # Move container
@@ -207,6 +209,7 @@ bindsym Mod4+Shift+r restart
 
 # Exit i3 (logs you out of your X session)
 bindsym Mod4+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
 #==============================================================================
 ## ~~ RESIZING SETTINGS ~~
 #==============================================================================
@@ -275,4 +278,5 @@ smart_borders no_gaps
 smart_gaps on
 gaps inner 15
 gaps outer 0
+
 
