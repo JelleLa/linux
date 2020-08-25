@@ -49,10 +49,12 @@ exec nitrogen --restore &
 exec picom --config ~/.config/picom/picom.conf
 exec picom
 exec --no-startup-id "mate-terminal --role=ncmpcpp --command=ncmpcpp"
+exec --no-startup-id "mate-terminal --role=notes --command='sudo vim Notes/notepad.md'"
 for_window [class="Firefox"] focus
 for_window [class="Mate-terminal" window_role="ncmpcpp"] floating enable
 for_window [class="Mate-terminal" window_role="ncmpcpp"] resize set 1500 1000
-for_window [class="Mate-terminal" window_role="ncmpcpp"] move position center 
+for_window [class="Mate-terminal" window_role="ncmpcpp"] move position center
+for_window [class="Mate-terminal" window_role="notes"] move scratchpad 
 for_window [class="blueman-manager"] floating enable
 exec_always --no-startup-id killall -q polybar
 exec_always --no-startup-id polybar bar &
@@ -278,5 +280,4 @@ smart_borders no_gaps
 smart_gaps on
 gaps inner 15
 gaps outer 0
-
 
