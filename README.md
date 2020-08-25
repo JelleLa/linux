@@ -6,7 +6,7 @@ The Linux files are sorted in folders, like i3 and Neofetch self-evidenty contai
 
 * **firefox** (Current Version: 1.0 [09-07-2020])
 
-* **i3** (Current Version: 1.1 [10-08-2020])
+* **i3** (Current Version: 1.3 [25-08-2020])
 
 * **images** (Current Version: 1.0 [12-07-2020])
 
