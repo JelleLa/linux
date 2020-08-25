@@ -1,4 +1,8 @@
 # RELEASE NOTES
+#### [v.1.3] (25/08/2020)
+* Media controls now work with `mpd` + `ncmpcpp` through `mpc`.
+* Scratchpad added that auto-opens the preferred note file. 
+
 #### [v.1.2] (23/08/2020)
 * Replaced `albert` search bar with `rofi`. Ensure to move the `.Xresources` file in this repo to `~` for correct colors.
 
