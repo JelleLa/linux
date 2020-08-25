@@ -19,7 +19,7 @@ Move files to `~/.config/i3`.
 
 # ROADMAP 
 - [x] Update Color Sheme.
-- [ ] Make Media Controls Work With `mpd` + `ncmpcpp`.
+- [x] Make Media Controls Work With `mpd` + `ncmpcpp`.
 
 
 
