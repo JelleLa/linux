@@ -4,7 +4,7 @@
 * Initial Release of userChrome.css Theme
 
 # NOTES
-Move file into the Firefox Profiles Directory. More Information can be found at https://www.userchrome.org/.
-
+* Move file into the Firefox Profiles Directory. More Information can be found at https://www.userchrome.org/.
+* Disabling Zoom Search Bar: https://support.mozilla.org/en-US/questions/1283864 
 # ROADMAP 
 -
