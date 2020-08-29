@@ -3,6 +3,7 @@ Linux files like configurations for programms like i3 and Neofetch and more! Thi
 
 ## Hierarchy
 The Linux files are sorted in folders, like i3 and Neofetch self-evidenty containing i3 and Neofetch related files.
+* **cheatsheet** (Not available yet)
 
 * **firefox** (Current Version: 1.0 [09-07-2020])
 
