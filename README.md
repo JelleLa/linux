@@ -1,5 +1,5 @@
 # Linux
-Linux files like configurations for programms like i3 and Neofetch and more! This repository can be cloned by running `git clone https://github.com/JelleLa/linux`.
+Linux files like configurations for programs like i3 and Neofetch and more! This repository can be cloned by running `git clone https://github.com/JelleLa/linux`.
 
 ## Hierarchy
 The Linux files are sorted in folders, like i3 and Neofetch self-evidenty containing i3 and Neofetch related files.
