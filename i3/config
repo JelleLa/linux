@@ -64,6 +64,8 @@ exec_always --no-startup-id polybar bar &
 #==============================================================================
 bindsym Mod4+Shift+s exec i3lock --color=$black 				# i3lock
 bindsym Mod4+s exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 	# Rofi
+bindsym Mod4+Control+Right workspace next					# Move WS Right
+bindsym Mod4+Control+Left workspace prev					# Move WS Left
 #==============================================================================
 ## ~~ BACKLIGHT SETTINGS ~~
 #==============================================================================
