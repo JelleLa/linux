@@ -1,4 +1,6 @@
 # RELEASE NOTES
+#### [v.1.4] (19/09/2020)
+* `Left` and `Right` keys now switch to the previous and next (numerical) workspace respectively.
 #### [v.1.3] (25/08/2020)
 * Media controls now work with `mpd` + `ncmpcpp` through `mpc`.
 * Scratchpad added that auto-opens the preferred note file. 
