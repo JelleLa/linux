@@ -1,4 +1,7 @@
 # RELEASE NOTES
+#### [v.1.5] (03/10/2020)
+* `Left` and `Right` keys shortcuts of v.1.4 are removed since they behaved unexpectedly.
+*  Border Size of focused window is now 2 pixels.
 #### [v.1.4] (19/09/2020)
 * `Left` and `Right` keys now switch to the previous and next (numerical) workspace respectively.
 #### [v.1.3] (25/08/2020)
@@ -20,8 +23,8 @@
 Move files to `~/.config/i3`. 
 
 # ROADMAP 
-- [x] Update Color Sheme.
-- [x] Make Media Controls Work With `mpd` + `ncmpcpp`.
+- [] None
+
 
 
 
