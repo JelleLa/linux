@@ -19,7 +19,7 @@ The Linux files are sorted in folders, like i3 and Neofetch self-evidenty contai
 
 * **neofetch** (Current Version: 1.1 [19-08-2020])
 
-* **picom** (Current Version: 1.1 [19-08-2020])
+* **picom** (Current Version: 1.1.1 [23-12-2020])
 
 * **polybar** (Current Version: 1.0 [04-08-2020])
 
