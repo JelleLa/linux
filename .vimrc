@@ -52,4 +52,6 @@ set confirm
 
 " DISABLE Vi COMPATIBILITY
 set nocompatible
+" DISABLE BACKUP FILES GENERATION (~ - files)
+set nobackup
 
