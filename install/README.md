@@ -1,6 +1,10 @@
 # RELEASE NOTES
 
-#### [v.1.0]
+#### [v.2.0] (19-03-2021)
+* Initial Release of new `ncurses`based version.
+* Now Solus only.
+
+#### [v.1.0] (06-07-2020)
 * Initial Release.
 
 # HOW TO EXECUTE
