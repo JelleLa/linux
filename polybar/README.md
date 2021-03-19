@@ -1,6 +1,11 @@
 # RELEASE NOTES
 
-#### [v.1.0]
+#### [v.2.0] (04-08-2020)
+* `fontawesome` is now a dependency; required for program icons.
+* New General Layout.
+* Powerbutton Menu for `poweroff` and `reboot` command.
+
+#### [v.1.0] (04-08-2020)
 * Initial Release.
 
 # SETUP
